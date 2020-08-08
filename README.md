@@ -5,7 +5,7 @@ Large-scale phenotypic data processing is essential in research. Researchers nee
 ## Installation
 
 ``` r
-library("Phenotype")
+install.packages("Phenotype")
 ```
 
 ## Usage
@@ -13,6 +13,7 @@ library("Phenotype")
 ### Remove outliers from phenotypic data
 
 ``` r
+library("Phenotype")
 data("wheatds")
 inlier <- outlier(wheatds, sample = "Line", loc = "Env", rep = "Rep", phe = "DS", mode = "blup")
 ```
